@@ -1,0 +1,26 @@
+:root {
+  --colorMain: #c7e7fc;
+  --colorSub: #616060;
+
+  --spaceBase: 8px;
+  --space1: var(--spaceBase);
+  --space2: calc(var(--spaceBase) * 2);
+  --space4: calc(var(--spaceBase) * 4);
+  --space8: calc(var(--spaceBase) * 8);
+
+  --fontBase: 8px;
+  --font1: var(--fontBase);
+  --font2: calc(var(--fontBaseVase) * 2);
+  --font4: calc(var(--fontBase) * 4);
+  --font8: calc(var(--fontBase) * 8);
+
+  
+}
+
+body {
+  color: var(--colorSub);
+}
+
+button, input, select, textarea {
+  font-size   : 100%;
+}
