@@ -20,8 +20,8 @@ body {
 
 .card-header {
   width: 100%;
-  height: 55px;
-  line-height: 55px;
+  height: 45px;
+  line-height: 45px;
   background-color: #8EC5FC;
   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   text-align: center;
@@ -42,7 +42,7 @@ body {
 }
 
 .card-contents {
-  height: calc(85vh - 65px);
+  height: calc(85vh - 55px);
   padding: 5px;
 }
 
