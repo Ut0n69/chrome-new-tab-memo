@@ -11,9 +11,10 @@ function init() {
 
 function setApp(app) {
   const li = document.createElement('li');
+  li.className = 'apps-list-app';
   li.innerHTML = `
     <img class="apps-image" src="${app.icons[0].url}"/>
-    <span class="appId-${app.id}">${app.shortName}</a>
+    <span class="appId-${app.id} apps-name">${app.shortName}</span>
   `;
   document.querySelector('.apps-list').appendChild(li);
 

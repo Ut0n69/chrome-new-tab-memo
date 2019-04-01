@@ -7,40 +7,79 @@ body {
   display: flex;
   max-width: 1680px;
   margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 85vh;
+  border-radius: 12px;
+  overflow: scroll;
+  box-shadow: 0 10px 14px rgba(0, 0, 0, .4);
+}
+
+.card-header {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  text-align: center;
+  font-size: 18px;
 }
 
 .memo {
-  width: 680px;
-  height: 85vh;
-  margin: 5px;
-  border: 2px solid #ccc;
+  width: 480px;
   font-size: 25px;
-  border-radius: 10px;
+  margin-right: 15px;
 }
 
-.todo {
-  width: 500px;
-  height: 85vh;
-  margin: 5px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-}
-
-.apps {
-  width: 500px;
-  height: 85vh;
-  margin: 5px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-}
-
-.apps-image {
-  width: 18px;
-}
-
-textarea {
+.memo-area {
   resize: none;
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+
+.card-contents {
+  height: calc(85vh - 65px);
+  padding: 5px;
+}
+
+.todo {
+  width: 350px;
+  margin-right: 15px;
+}
+
+.todo-list {
+  overflow: scroll;
+}
+
+.apps {
+  width: 300px;
+}
+
+.apps-list {
+  overflow: scroll;
+}
+
+.apps-list-app {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.apps-list-app:hover {
+  background: #eee;
+}
+
+.apps-name {
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.apps-image {
+  vertical-align: middle;
+  width: 22px;
+  margin-right: 5px;
 }
