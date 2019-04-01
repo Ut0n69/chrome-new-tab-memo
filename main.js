@@ -1,3 +1,13 @@
+function restoreMemo() {
+  const dom = document.querySelector('.memo-area')
+  dom.value = localStorage.memo
+
+  dom.addEventListener('keyup', () => {
+    const text = dom.value
+    localStorage.memo = text
+  })
+}
+
 function init() {
   chrome.management.getAll(apps => {
     console.log(apps)
@@ -26,4 +36,5 @@ function setApp(app) {
 
 (() => {
   init();
+  restoreMemo();
 })();
